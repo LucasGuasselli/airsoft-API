@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projetos_C#\\headquarters-airsoft-app\\headquarters-airsoft-app\\headquarters-airsoft-app.csproj": {}
+    "C:\\projetos_C#\\airsoft-api\\headquarters-airsoft-app\\headquarters-airsoft-app.csproj": {}
   },
   "projects": {
-    "C:\\projetos_C#\\headquarters-airsoft-app\\headquarters-airsoft-app\\headquarters-airsoft-app.csproj": {
+    "C:\\projetos_C#\\airsoft-api\\headquarters-airsoft-app\\headquarters-airsoft-app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos_C#\\headquarters-airsoft-app\\headquarters-airsoft-app\\headquarters-airsoft-app.csproj",
+        "projectUniqueName": "C:\\projetos_C#\\airsoft-api\\headquarters-airsoft-app\\headquarters-airsoft-app.csproj",
         "projectName": "headquarters-airsoft-app",
-        "projectPath": "C:\\projetos_C#\\headquarters-airsoft-app\\headquarters-airsoft-app\\headquarters-airsoft-app.csproj",
+        "projectPath": "C:\\projetos_C#\\airsoft-api\\headquarters-airsoft-app\\headquarters-airsoft-app.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos_C#\\headquarters-airsoft-app\\headquarters-airsoft-app\\obj\\",
+        "outputPath": "C:\\projetos_C#\\airsoft-api\\headquarters-airsoft-app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

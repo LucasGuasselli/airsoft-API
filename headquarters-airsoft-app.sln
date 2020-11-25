@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "headquarters-airsoft-app", "headquarters-airsoft-app\headquarters-airsoft-app.csproj", "{0620C350-4A58-4CF8-9FC0-18156C42D9BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "airsoft-API", "headquarters-airsoft-app\airsoft-API.csproj", "{0620C350-4A58-4CF8-9FC0-18156C42D9BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{B504B0F4-F144-4917-A8E4-1EF9078F3314}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{1A6BBF01-DCF8-4CC7-85D5-153C09793D2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{0620C350-4A58-4CF8-9FC0-18156C42D9BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0620C350-4A58-4CF8-9FC0-18156C42D9BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0620C350-4A58-4CF8-9FC0-18156C42D9BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B504B0F4-F144-4917-A8E4-1EF9078F3314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B504B0F4-F144-4917-A8E4-1EF9078F3314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B504B0F4-F144-4917-A8E4-1EF9078F3314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B504B0F4-F144-4917-A8E4-1EF9078F3314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A6BBF01-DCF8-4CC7-85D5-153C09793D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A6BBF01-DCF8-4CC7-85D5-153C09793D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A6BBF01-DCF8-4CC7-85D5-153C09793D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A6BBF01-DCF8-4CC7-85D5-153C09793D2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

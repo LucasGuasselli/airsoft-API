@@ -31,5 +31,15 @@ namespace EFCore.WebAPI.Controllers
             return Ok();
         }
 
+        // DELETE
+        [HttpDelete("{id}")]
+        public void Delete(int id) 
+        {
+            var jogador = _context.Jogadores.Where(x => x.Id == id).Single();
+
+            _context.Jogadores.Remove(jogador);
+            _context.SaveChanges();
+        }
+
     }
 }

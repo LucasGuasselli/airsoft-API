@@ -19,7 +19,17 @@ namespace EFCore.WebAPI.Controllers
             _context = context;
         }
 
-        // GET api/values/5
+        //GET
+        [HttpGet]
+        public ActionResult Get()
+        {
+
+            var jogadores = _context.Jogadores;
+
+             return Ok(jogadores);
+        }
+
+        // GET api/jogador/5
         [HttpGet("{nameJogador}")]
         public ActionResult Get(string nameJogador)
         {

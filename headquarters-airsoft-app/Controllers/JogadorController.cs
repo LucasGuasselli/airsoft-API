@@ -20,15 +20,23 @@ namespace EFCore.WebAPI.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{nameJogador}")]
-        public ActionResult Get(string nameJogador)
+        //[HttpGet("{nameJogador}")]
+        //public ActionResult Get(string nameJogador)
+        //{
+        //    var jogador = new Jogador { Nome = nameJogador };
+
+        //    _context.Jogadores.Add(jogador);
+        //    _context.SaveChanges();
+
+        //    return Ok();
+        //}
+
+        [HttpGet("{id}")]
+        public ActionResult Get(int id)
         {
-            var jogador = new Jogador { Nome = nameJogador };
-
-            _context.Jogadores.Add(jogador);
-            _context.SaveChanges();
-
-            return Ok();
+            var jogador = new Jogador();
+            jogador = _context.Jogadores.Find(id);
+            return Ok(jogador);
         }
 
         // DELETE
@@ -39,6 +47,12 @@ namespace EFCore.WebAPI.Controllers
 
             _context.Jogadores.Remove(jogador);
             _context.SaveChanges();
+        }
+
+        [HttpGet]
+        public ActionResult Get()
+        {
+            return Ok("Olá mundo!");
         }
 
     }

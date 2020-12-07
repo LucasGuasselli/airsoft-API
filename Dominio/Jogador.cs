@@ -8,7 +8,6 @@ namespace Dominio
 		public Jogador()
 		{
 		}
-
 		public int Id { get; set; }
 		public int EquipeId { get; set; }
 		public int CampoId { get; set; }

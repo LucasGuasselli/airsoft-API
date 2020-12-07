@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fv0DLpcYhZpUHeQ2SeXZAeicteOJ50fAvURr41gAE1FAUHiHU1a9gbG4C7S5hIDKZNU8oT203KJ1plrM2r/U6A==",
+  "dgSpecHash": "ZylzMEMPNpQ8LqODJDII8sjRBSSruVfTLpVavedOPjeu1T5kRTofmPT7D8vMbdbsD0Zu9ug/bX6Jegkl6dXPFA==",
   "success": true,
-  "projectFilePath": "C:\\projetos_C#\\airsoft-api\\Dominio\\Dominio.csproj",
+  "projectFilePath": "C:\\Users\\KVNga\\source\\repos\\airsoft-API\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\lucas\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

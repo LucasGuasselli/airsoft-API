@@ -17,8 +17,9 @@ namespace Dominio
 		public string NomeMae { get; set; }
 		public DateTime DataNascimento { get; set; }
 		public string Email { get; set; }
-		//	public Base64 Imagem { get; set; }
-		public string Descricao { get; set; }
+        // public string Senha { get; set; }
+        //	public Base64 Imagem { get; set; }
+        public string Descricao { get; set; }
 
 	}
 }

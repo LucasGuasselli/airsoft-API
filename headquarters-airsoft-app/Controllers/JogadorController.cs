@@ -22,7 +22,7 @@ namespace EFCore.WebAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
-        
+
             var jogador = _context.Jogadores.Find(id);
             return Ok(jogador);
         }
@@ -39,7 +39,7 @@ namespace EFCore.WebAPI.Controllers
             viewModel.Data = novoJogador;
 
             _context.Jogadores.Add(novoJogador);
-            _context.SaveChanges();           
+            _context.SaveChanges();
 
             return viewModel;
         }
@@ -63,7 +63,7 @@ namespace EFCore.WebAPI.Controllers
 
         // DELETE
         [HttpDelete("{id}")]
-        public ActionResult Delete(int id) 
+        public ActionResult Delete(int id)
         {
             var jogador = _context.Jogadores.Where(x => x.Id == id).Single();
 
@@ -74,7 +74,7 @@ namespace EFCore.WebAPI.Controllers
 
         [HttpGet]
         public ActionResult Get()
-        {         
+        {
             var jogadores = _context.Jogadores.ToList();
             return Ok(jogadores);
         }
@@ -91,6 +91,6 @@ namespace EFCore.WebAPI.Controllers
 
     public class JogadorViewModel
     {
-        public Jogador Data{ get; set; }
+        public Jogador Data { get; set; }
     }
 }

@@ -4,6 +4,6 @@ C:\projetos_C#\airsoft-api\Dominio\bin\Debug\netstandard2.0\Dominio.pdb
 C:\projetos_C#\airsoft-api\Dominio\obj\Debug\netstandard2.0\Dominio.csprojAssemblyReference.cache
 C:\projetos_C#\airsoft-api\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
 C:\projetos_C#\airsoft-api\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
-C:\projetos_C#\airsoft-api\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
 C:\projetos_C#\airsoft-api\Dominio\obj\Debug\netstandard2.0\Dominio.dll
 C:\projetos_C#\airsoft-api\Dominio\obj\Debug\netstandard2.0\Dominio.pdb
+C:\projetos_C#\airsoft-api\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache

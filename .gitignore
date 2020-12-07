@@ -35,6 +35,10 @@ Obj/Debug/
 obj/Debug/
 [Oo]bj/[Dd]ebug/
 
+bin\Debug\netcoreapp3.1
+obj\Debug\netcoreapp3.1
+bin/Debug/netcoreapp3.1
+obj/Debug/netcoreapp3.1
 
 bin/[Dd]ebug/
 [Bb]in/[Dd]ebug/

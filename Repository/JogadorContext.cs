@@ -8,7 +8,6 @@ public class JogadorContext : DbContext
 	
 	}
 		
-	public DbSet<Jogador> Jogadores { get; set; }
-
+	public DbSet<Jogador> Jogadores { get; set; }	
     
 }

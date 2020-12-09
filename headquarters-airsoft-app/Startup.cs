@@ -38,6 +38,16 @@ namespace headquarters_airsoft_app
             services.AddCors();
             services.AddControllers();
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Version = "v1",
+                    Title = "Swagger Demo",
+                    Description = "A simple example ASP.NET Core Web API",
+                });
+            });
+
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
             services.AddAuthentication(x =>
             {

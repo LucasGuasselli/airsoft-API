@@ -48,5 +48,10 @@ C:\projetos_C#\airsoft-api\headquarters-airsoft-app\bin\Debug\netcoreapp3.1\Micr
 C:\projetos_C#\airsoft-api\headquarters-airsoft-app\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\projetos_C#\airsoft-api\headquarters-airsoft-app\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\projetos_C#\airsoft-api\headquarters-airsoft-app\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\projetos_C#\airsoft-api\headquarters-airsoft-app\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\projetos_C#\airsoft-api\headquarters-airsoft-app\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\projetos_C#\airsoft-api\headquarters-airsoft-app\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\projetos_C#\airsoft-api\headquarters-airsoft-app\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\projetos_C#\airsoft-api\headquarters-airsoft-app\obj\Debug\netcoreapp3.1\airsoft-API.csproj.CoreCompileInputs.cache
+C:\projetos_C#\airsoft-api\headquarters-airsoft-app\obj\Debug\netcoreapp3.1\airsoft-API.MvcApplicationPartsAssemblyInfo.cs
 C:\projetos_C#\airsoft-api\headquarters-airsoft-app\obj\Debug\netcoreapp3.1\airsoft-API.MvcApplicationPartsAssemblyInfo.cache

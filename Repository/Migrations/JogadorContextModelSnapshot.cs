@@ -52,6 +52,9 @@ namespace Repository.Migrations
                     b.Property<string>("NomeMae")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Senha")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Jogadores");

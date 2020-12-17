@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Repository.Migrations
 {
-    public partial class teste : Migration
+    public partial class airsoftapi : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -21,6 +21,7 @@ namespace Repository.Migrations
                     NomeMae = table.Column<string>(nullable: true),
                     DataNascimento = table.Column<DateTime>(nullable: false),
                     Email = table.Column<string>(nullable: true),
+                    Senha = table.Column<string>(nullable: true),
                     Descricao = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

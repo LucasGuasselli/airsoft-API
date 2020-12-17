@@ -21,6 +21,14 @@ namespace EFCore.WebAPI.Controllers
             _context = context;
         }
 
+        [HttpGet]
+        [Authorize]
+        public ActionResult Get()
+        {
+            var jogadores = _context.Jogadores.ToList();
+            return Ok(jogadores);
+        }
+
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
@@ -55,7 +63,7 @@ namespace EFCore.WebAPI.Controllers
             jogador.CPF = payload.CPF;
             jogador.Email = payload.Email;
             jogador.Nome = payload.Nome;
-            //jogador.Senha = payload.Senha;            
+            jogador.Senha = payload.Senha;            
             viewModel.Data = jogador;
 
             _context.SaveChanges();
@@ -73,15 +81,7 @@ namespace EFCore.WebAPI.Controllers
             _context.SaveChanges();
             return Ok("Jogador Deletado");
         }
-
-        [HttpGet]
-        [Authorize]
-        public ActionResult Get()
-        {
-            var jogadores = _context.Jogadores.ToList();
-            return Ok(jogadores);
-        }
-
+        
         [HttpPost]
         [Route("login")]
         [AllowAnonymous]
@@ -93,7 +93,29 @@ namespace EFCore.WebAPI.Controllers
                 return NotFound(new { message = "Usuário ou senha inválido!" });
 
             var token = TokenService.GenerateToken(user);
-            // user.Senha = "";
+                user.Senha = "";
+           
+            return new
+            {
+                user = user,
+                data = DateTime.Now,
+                token = token
+            };
+        }
+
+        [HttpPost]
+        [Route("verificaToken")]
+        [Authorize]
+        public async Task<ActionResult<dynamic>> VerificaToken([FromBody] Jogador jogador)
+        {
+            var user = _context.Jogadores.Where(x => x.Email == jogador.Email && x.Senha == jogador.Senha).Single();
+
+            if (user == null)
+                return NotFound(new { message = "Usuário ou senha inválido!" });
+
+            var token = TokenService.GenerateToken(user);
+            user.Senha = "";
+
             return new
             {
                 user = user,

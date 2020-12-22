@@ -4,8 +4,12 @@ using System.Text;
 
 namespace Dominio
 {
-    class Equipe
+    public class Equipe
     {
+        public Equipe()
+        { 
+        }
+
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Tag { get; set; }

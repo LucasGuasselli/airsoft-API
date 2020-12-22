@@ -4,8 +4,11 @@ using System.Text;
 
 namespace Dominio
 {
-    class Campo
+    public class Campo
     {
+        public Campo() 
+        {
+        }
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Descrição { get; set; }

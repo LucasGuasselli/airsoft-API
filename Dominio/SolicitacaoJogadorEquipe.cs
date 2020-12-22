@@ -4,8 +4,11 @@ using System.Text;
 
 namespace Dominio
 {
-    class SolicitacaoJogadorEquipe
+    public class SolicitacaoJogadorEquipe
     {
+        public SolicitacaoJogadorEquipe()
+        { 
+        }
         public int JogadorId { get; set; }
         public int EquipeId { get; set; }
     }

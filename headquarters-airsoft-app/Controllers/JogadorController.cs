@@ -32,9 +32,8 @@ namespace EFCore.WebAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
-
             var jogador = _context.Jogadores.Find(id);
-            return Ok(jogador);
+                return Ok(jogador);
         }
 
         [HttpPost]
@@ -67,8 +66,7 @@ namespace EFCore.WebAPI.Controllers
             viewModel.Data = jogador;
 
             _context.SaveChanges();
-
-            return viewModel;
+                return viewModel;
         }
 
         // DELETE
@@ -79,7 +77,7 @@ namespace EFCore.WebAPI.Controllers
 
             _context.Jogadores.Remove(jogador);
             _context.SaveChanges();
-            return Ok("Jogador Deletado");
+                return Ok("Jogador Deletado");
         }      
 
     }

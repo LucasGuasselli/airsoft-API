@@ -15,6 +15,7 @@ namespace Dominio
         public string Tag { get; set; }
         public DateTime Data { get; set; }
        // public Base64FormattingOptions Imagem { get; set; }
+       public Jogador jogadores { get; set; }
 
 
     }

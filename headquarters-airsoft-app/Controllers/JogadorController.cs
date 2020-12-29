@@ -78,8 +78,27 @@ namespace EFCore.WebAPI.Controllers
             _context.Jogadores.Remove(jogador);
             _context.SaveChanges();
                 return Ok("Jogador Deletado");
-        }      
+        }
 
+        [HttpPut("{JogadorId}/cadastrarEquipe/{EquipeId}")]
+        [Authorize]
+        public ActionResult AdicionarEquipe(int JogadorId, int EquipeId)
+        {
+            var jogador = _context.Jogadores.Find(JogadorId);
+            var equipe = _context.Equipes.Find(EquipeId);
+            if (jogador == null || equipe == null)
+            { 
+                return NotFound(new { message = "Jogador/Equipe inválidos!" });
+            }
+            else
+            {
+                jogador.EquipeId = EquipeId;
+            }
+            JogadorViewModel viewModel = new JogadorViewModel();
+           
+            _context.SaveChanges();
+                return Ok("Jogador Adicionado" );
+        }
     }
 
     public class JogadorPayload

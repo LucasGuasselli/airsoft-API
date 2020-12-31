@@ -47,7 +47,8 @@ namespace headquarters_airsoft_app.Controllers
             novaEquipe.Nome = payload.Nome;
             novaEquipe.Tag = payload.Tag;
             novaEquipe.Data = payload.Data;
-            viewModel.Data = novaEquipe;
+            novaEquipe.jogadores = new List<Jogador>();
+                viewModel.Data = novaEquipe;
 
             _context.Equipes.Add(novaEquipe);
             _context.SaveChanges();
@@ -72,8 +73,7 @@ namespace headquarters_airsoft_app.Controllers
                 }
                
                 viewModel.Data = equipe;
-                
-
+            _context.Equipes.Update(equipe);
             _context.SaveChanges();
                 return viewModel;
         }

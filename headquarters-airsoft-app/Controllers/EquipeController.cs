@@ -47,7 +47,7 @@ namespace headquarters_airsoft_app.Controllers
             novaEquipe.Nome = payload.Nome;
             novaEquipe.Tag = payload.Tag;
             novaEquipe.Data = payload.Data;
-            novaEquipe.jogadores = new List<Jogador>();
+            novaEquipe.jogadores = payload.jogadores;
                 viewModel.Data = novaEquipe;
 
             _context.Equipes.Add(novaEquipe);
@@ -97,6 +97,8 @@ public class EquipePayload
     public string Nome { get; set; }
     public string Tag { get; set; }
     public DateTime Data { get; set; }
+    public List<Jogador> jogadores { get; set; }
+
 }
 
 public class EquipeViewModel

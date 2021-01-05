@@ -11,7 +11,7 @@ namespace Dominio
         }
         public int Id { get; set; }
         public string Nome { get; set; }
-        public string Descrição { get; set; }
+        public string Descricao { get; set; }
        // public Base64FormattingOptions Imagem { get; set; }
         public string Local { get; set; }
 

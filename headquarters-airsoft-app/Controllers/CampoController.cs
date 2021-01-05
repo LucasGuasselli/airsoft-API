@@ -61,7 +61,7 @@ namespace headquarters_airsoft_app.Controllers
             {
                 var campo = new Campo();
                     campo.Nome = payload.Nome;
-                    campo.Descrição = payload.Descricao;
+                    campo.Descricao = payload.Descricao;
                     campo.Local = payload.Local;
 
                 _context.Campos.Add(campo);
@@ -84,7 +84,7 @@ namespace headquarters_airsoft_app.Controllers
                 var campo = _context.Campos.Find(id);
 
                 campo.Nome = payload.Nome;
-                campo.Descrição = payload.Descricao;
+                campo.Descricao = payload.Descricao;
                 campo.Local = payload.Local;
 
                 _context.Campos.Update(campo);

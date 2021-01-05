@@ -26,7 +26,7 @@ namespace EFCore.WebAPI.Controllers
         public ActionResult Get()
         {
             var jogadores = _context.Jogadores.ToList();
-            return Ok(jogadores);
+                return Ok(jogadores);
         }
 
         [HttpGet("{id}")]

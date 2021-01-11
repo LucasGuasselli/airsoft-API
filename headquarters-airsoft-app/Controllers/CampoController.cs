@@ -39,6 +39,7 @@ namespace headquarters_airsoft_app.Controllers
 
         // GET api/<CampoController>/5
         [HttpGet("{id}")]
+        [Authorize]
         public ActionResult Get(int id)
         {
             try

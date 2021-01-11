@@ -3,14 +3,16 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Repository.Migrations
 {
     [DbContext(typeof(JogadorContext))]
-    partial class JogadorContextModelSnapshot : ModelSnapshot
+    [Migration("20210109132847_alterandoPartida")]
+    partial class alterandoPartida
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -133,9 +135,6 @@ namespace Repository.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<bool>("Ativo")
-                        .HasColumnType("bit");
-
                     b.Property<int>("CampoId")
                         .HasColumnType("int");
 
@@ -148,19 +147,7 @@ namespace Repository.Migrations
                     b.Property<string>("Nome")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Periodo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(1)");
-
-                    b.Property<float>("Preco")
-                        .HasColumnType("real");
-
-                    b.Property<bool>("Restrito")
-                        .HasColumnType("bit");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("CampoId");
 
                     b.ToTable("Partidas");
                 });
@@ -183,15 +170,6 @@ namespace Repository.Migrations
                     b.HasOne("Dominio.Equipe", null)
                         .WithMany("jogadores")
                         .HasForeignKey("EquipeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Dominio.Partida", b =>
-                {
-                    b.HasOne("Dominio.Campo", "Campo")
-                        .WithMany()
-                        .HasForeignKey("CampoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
